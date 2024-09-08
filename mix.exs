@@ -11,7 +11,8 @@ defmodule Backstage.MixProject do
       dialyzer: dialyzer(),
       description: description(),
       docs: docs(),
-      package: package()
+      package: package(),
+      source_url: "https://github.com/type1fool/backstage"
     ]
   end
 
@@ -54,8 +55,7 @@ defmodule Backstage.MixProject do
   defp package do
     [
       licenses: ~w(Apache-2.0),
-      links: [],
-      source_url: "https://github.com/type1fool/backstage"
+      links: []
     ]
   end
 end
