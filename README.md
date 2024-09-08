@@ -29,7 +29,9 @@
 
 Backstage is a [CQRS & Event Sourcing](#cqrwho) framework optimized for Elixir applications to take advantage of concurrency and parallelism on the BEAM.
 
-> This repository is currently in an experimentation phase. It is not intended to be used in any critical production systems. See [hex.pm](https://hex.pm/packages?search=cqrs&sort=recent_downloads) for a list of available CQRS packages.
+> 👨‍🎤 This repository is currently in an **experimentation phase**. It is not intended to be used in any critical production systems.
+>
+> See [hex.pm](https://hex.pm/packages?search=cqrs&sort=recent_downloads) for a list of available CQRS packages.
 
 # Goals
 
