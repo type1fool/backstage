@@ -7,6 +7,8 @@
 - [TODO](#todo)
 - [Installation](#installation)
 
+---
+
 > On Broadway, the backstage is buzzing with activity.
 >
 > The actors are stepping onto the stage.
@@ -20,6 +22,8 @@
 > The audience is transfixed.
 >
 > The show must go on, even when mistakes are made.
+
+---
 
 # 🚧 Backstage 🚧
 
