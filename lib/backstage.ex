@@ -3,6 +3,8 @@ defmodule Backstage do
   alias Backstage.EventProducer
   alias Broadway.Message
 
+  # TODO: Should the message contain a command or an event?
+
   @default_config [
     name: __MODULE__,
     producer: [
@@ -29,7 +31,7 @@ defmodule Backstage do
   end
 
   @impl Broadway
-  def handle_message(_processor, message, _context) do
+  def handle_message(_processor, %Message{} = message, _context) do
     message
   end
 
