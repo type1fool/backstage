@@ -1,0 +1,36 @@
+defmodule Backstage.MixProject do
+  use Mix.Project
+
+  def project do
+    [
+      app: :backstage,
+      version: "0.0.1",
+      elixir: "~> 1.17",
+      start_permanent: Mix.env() == :prod,
+      deps: deps(),
+      dialyzer: dialyzer()
+    ]
+  end
+
+  # Run "mix help compile.app" to learn about applications.
+  def application do
+    [
+      extra_applications: [:logger]
+    ]
+  end
+
+  # Run "mix help deps" to learn about dependencies.
+  defp deps do
+    [
+      {:broadway, "~> 1.1"},
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
+      {:dialyxir, "~> 1.4", only: [:dev, :test], runtime: false}
+    ]
+  end
+
+  defp dialyzer do
+    [
+      plt_file: {:no_warn, "priv/plts/backstage.plt"}
+    ]
+  end
+end
