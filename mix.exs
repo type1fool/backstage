@@ -47,7 +47,7 @@ defmodule Backstage.MixProject do
 
   defp docs do
     [
-      main: "Backstage",
+      main: "README",
       extras: ~w(README.md)
     ]
   end
